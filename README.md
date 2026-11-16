@@ -14,9 +14,20 @@
 
 **这是一份快照，不是内容的生产现场。** 内容在上游维护，本仓库不跟随、不同步 —— 它存在的意义是「部署示例」，不是「内容源」。
 
+## 怎么建的
+
+用 [lightwiki-starter](https://github.com/summerset-zz/lightwiki-starter) 模板开始的：
+
+1. 点 **Use this template** 建仓库
+2. 把模板里的 `content/zh/start.md` 换成真实内容（这里是 `content/en` 55 页 + `content/zh` 55 页）
+3. 改 `wiki.config.ts` 的 `title`、`siteUrl`、`sections`
+4. 仓库 Settings → Pages → Source 选 **GitHub Actions**
+
+workflow 没改、`package.json` 没有、依赖一个没装 —— 内容仓库从头到尾只有 markdown 加一个配置文件。
+
 ## 这个示例演示了什么
 
-- **内容仓库完全独立**：自己的 `wiki.config.ts`、自己的 `docs/`，不依赖工具的任何包
+- **内容仓库完全独立**：自己的 `wiki.config.ts`、自己的 `content/`，不依赖工具的任何包
 - **构建不需要凭据**：CI 里 `npx @lightwiki/cli@^0.1.0 build .` 一行完事
 - **部署在子路径**（`/lightwiki-demo-fontcover/`）—— 也就是 `basePath` 的真实用法
 - **产物是可移植静态文件**：110 页 / 约 3 MB / 构建约 1 秒，扔进任何静态托管都能用

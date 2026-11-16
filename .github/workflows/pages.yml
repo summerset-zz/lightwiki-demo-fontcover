@@ -32,8 +32,11 @@ jobs:
         with:
           node-version: 22
 
-      # 工具从 npm 现取，不需要 install、不需要任何凭据
+      # 工具从 npm 现取，不需要 install、不需要任何凭据。
+      # 项目站点挂在 /<仓库名>/ 下，把仓库名注入给站点，否则产物里的链接会指到根目录。
       - name: 构建本站
+        env:
+          LIGHTWIKI_BASE_PATH: /${{ github.event.repository.name }}/
         run: npx --yes @lightwiki/cli@^0.1.0 build .
 
       - uses: actions/configure-pages@v5
