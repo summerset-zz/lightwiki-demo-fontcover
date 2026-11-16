@@ -17,20 +17,17 @@
 ## 这个示例演示了什么
 
 - **内容仓库完全独立**：自己的 `wiki.config.ts`、自己的 `docs/`，不依赖工具的任何包
-- **构建不需要跨仓库凭据**：CI 里临时 `git clone` 公开的工具仓库，用完即弃
-- **部署在子路径**（`/fontcover-docs/`）—— 也就是 `basePath` 的真实用法
+- **构建不需要凭据**：CI 里 `npx @lightwiki/cli@^0.1.0 build .` 一行完事
+- **部署在子路径**（`/lightwiki-demo-fontcover/`）—— 也就是 `basePath` 的真实用法
 - **产物是可移植静态文件**：110 页 / 约 3 MB / 构建约 1 秒，扔进任何静态托管都能用
 
 ## 自己跑一遍
 
-工具还没发布到 npm，先 clone 下来：
+这个仓库里没有 `package.json` —— 工具是 `npx` 现取的：
 
 ```bash
-git clone https://github.com/summerset-zz/lightwiki.git ../lightwiki
-cd ../lightwiki
-yarn install
-yarn wiki dev ../lightwiki-demo-fontcover      # 预览，默认 http://127.0.0.1:5173
-yarn wiki build ../lightwiki-demo-fontcover    # 构建，产物在 lightwiki-demo-fontcover/dist
+npx @lightwiki/cli dev .      # 预览，默认 http://127.0.0.1:5173
+npx @lightwiki/cli build .    # 构建，产物在 ./dist
 ```
 
 ## 内容讲什么

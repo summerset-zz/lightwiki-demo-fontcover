@@ -32,18 +32,9 @@ jobs:
         with:
           node-version: 22
 
-      - run: corepack enable
-
-      - name: 取轻维基（公开仓库）
-        run: git clone --depth 1 https://github.com/summerset-zz/lightwiki.git "$RUNNER_TEMP/lightwiki"
-
-      - name: 装工具依赖
-        working-directory: ${{ runner.temp }}/lightwiki
-        run: yarn install --immutable
-
+      # 工具从 npm 现取，不需要 install、不需要任何凭据
       - name: 构建本站
-        working-directory: ${{ runner.temp }}/lightwiki
-        run: yarn wiki build "$GITHUB_WORKSPACE"
+        run: npx --yes @lightwiki/cli@^0.1.0 build .
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
