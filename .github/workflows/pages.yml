@@ -1,0 +1,53 @@
+# 构建文档中心并发布到 GitHub Pages。
+#
+# 工具从公开仓库临时取用（`git clone --depth 1`），不需要任何跨仓库凭据 ——
+# 「内容仓库用自带 GITHUB_TOKEN 就能部署」这条约束的具体写法。
+# 首次运行前要在 Settings → Pages 里把 Source 设成 "GitHub Actions"。
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: corepack enable
+
+      - name: 取轻维基（公开仓库）
+        run: git clone --depth 1 https://github.com/summerset-zz/lightwiki.git "$RUNNER_TEMP/lightwiki"
+
+      - name: 装工具依赖
+        working-directory: ${{ runner.temp }}/lightwiki
+        run: yarn install --immutable
+
+      - name: 构建本站
+        working-directory: ${{ runner.temp }}/lightwiki
+        run: yarn wiki build "$GITHUB_WORKSPACE"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
