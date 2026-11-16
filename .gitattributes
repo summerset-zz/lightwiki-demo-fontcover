@@ -1,0 +1,2 @@
+# 内容文件一律 LF：Windows 下检出成 CRLF 会让 diff、行号、CI 全不一致
+* text=auto eol=lf
