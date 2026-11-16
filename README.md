@@ -2,7 +2,7 @@
 
 [fontcover.com](https://fontcover.com) 的文档快照，用来演示**用轻维基部署一个真实站点**是什么样。
 
-在线地址：**https://summerset-zz.github.io/fontcover-docs/**
+在线地址：**https://summerset-zz.github.io/lightwiki-demo-fontcover/**
 
 ## 内容版本
 
@@ -29,8 +29,8 @@
 git clone https://github.com/summerset-zz/lightwiki.git ../lightwiki
 cd ../lightwiki
 yarn install
-yarn wiki dev ../fontcover-docs      # 预览，默认 http://127.0.0.1:5173
-yarn wiki build ../fontcover-docs    # 构建，产物在 fontcover-docs/dist
+yarn wiki dev ../lightwiki-demo-fontcover      # 预览，默认 http://127.0.0.1:5173
+yarn wiki build ../lightwiki-demo-fontcover    # 构建，产物在 lightwiki-demo-fontcover/dist
 ```
 
 ## 内容讲什么

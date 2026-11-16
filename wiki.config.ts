@@ -11,8 +11,8 @@ import type { SiteConfigInput } from '@lightwiki/schema';
  */
 const config: SiteConfigInput = {
   title: '字体百科',
-  siteUrl: 'https://summerset-zz.github.io/fontcover-docs',
-  basePath: '/fontcover-docs/',
+  siteUrl: 'https://summerset-zz.github.io/lightwiki-demo-fontcover',
+  basePath: '/lightwiki-demo-fontcover/',
   defaultLanguage: 'en',
   content: {
     en: 'docs/en',
