@@ -28,7 +28,7 @@ workflow 没改、`package.json` 没有、依赖一个没装 —— 内容仓库
 ## 这个示例演示了什么
 
 - **内容仓库完全独立**：自己的 `wiki.config.ts`、自己的 `content/`，不依赖工具的任何包
-- **构建不需要凭据**：CI 里 `npx @lightwiki/cli@^0.1.0 build .` 一行完事
+- **构建不需要凭据**：CI 里 `npx @lightwiki/cli build .` 一行完事
 - **部署在子路径**（`/lightwiki-demo-fontcover/`）—— 也就是 `basePath` 的真实用法
 - **产物是可移植静态文件**：110 页 / 约 3 MB / 构建约 1 秒，扔进任何静态托管都能用
 
