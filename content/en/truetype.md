@@ -1,6 +1,6 @@
 ---
 title: TrueType
-description: Apple's outline format from the late 1980s: quadratic curves, pixel-hinting instructions, and still the default on Windows and macOS.
+description: "Apple's outline format from the late 1980s: quadratic curves, pixel-hinting instructions, and still the default on Windows and macOS."
 keywords: TrueType, TTF, 二次贝塞尔, 微调, hinting, 字体格式, truetype
 section: basics
 order: 6

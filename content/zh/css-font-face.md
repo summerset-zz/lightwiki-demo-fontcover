@@ -1,6 +1,6 @@
 ---
 title: "@font-face"
-keywords: "@font-face", src, local, unicode-range, font-display, 网页字体
+keywords: ['@font-face', src, local, unicode-range, font-display, 网页字体]
 description: 每个描述符都是在声明这个文件是什么，不是把文字变粗变斜。含 src、local()、unicode-range 与多 face 的写法。
 section: dev
 order: 1

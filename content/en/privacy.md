@@ -1,5 +1,7 @@
 ---
-title: Privacy Policykeywords: 隐私, 隐私政策, privacy, 个人信息, Cookie, 百度统计, 每月代号, 数据存储description: What we collect and what we do not, where it is stored and for how long, and how you can withdraw your consent.
+title: Privacy Policy
+keywords: 隐私, 隐私政策, privacy, 个人信息, Cookie, 百度统计, 每月代号, 数据存储
+description: What we collect and what we do not, where it is stored and for how long, and how you can withdraw your consent.
 section: legal
 order: 1
 updated: 2026-11-02

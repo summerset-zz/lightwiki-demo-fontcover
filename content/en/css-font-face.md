@@ -1,6 +1,6 @@
 ---
 title: "@font-face"
-keywords: "@font-face", src, local, unicode-range, font-display, 网页字体
+keywords: ['@font-face', src, local, unicode-range, font-display, 网页字体]
 description: Every descriptor declares what the file is — not "make the text bold". Covers src, local(), unicode-range and multi-face families.
 section: dev
 order: 1

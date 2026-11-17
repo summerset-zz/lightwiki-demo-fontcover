@@ -1,6 +1,6 @@
 ---
 title: Ligatures
-description: Two or more characters merged into one glyph: from metal type to Unicode code points, and who turns them on.
+description: 'Two or more characters merged into one glyph: from metal type to Unicode code points, and who turns them on.'
 keywords: 合字, 连字, ligature, liga, dlig, fi, 连写
 section: design
 order: 10

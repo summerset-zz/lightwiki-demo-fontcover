@@ -1,6 +1,6 @@
 ---
 title: Mojibake
-description: What you see when the wrong encoding is used: why it happens, how to tell which step went wrong, and how to recover.
+description: 'What you see when the wrong encoding is used: why it happens, how to tell which step went wrong, and how to recover.'
 keywords: 乱码, mojibake, 编码, GBK, Shift_JIS, charset, 亂碼
 section: unicode
 order: 10

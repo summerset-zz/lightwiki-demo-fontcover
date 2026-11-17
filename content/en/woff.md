@@ -1,6 +1,6 @@
 ---
 title: WOFF
-description: The format web fonts actually travel in: a TTF or OTF wrapped in a compression layer, Brotli in WOFF 2.0.
+description: 'The format web fonts actually travel in: a TTF or OTF wrapped in a compression layer, Brotli in WOFF 2.0.'
 keywords: WOFF, WOFF2, 网页字体, web font, 压缩, Brotli, zlib
 section: basics
 order: 8
