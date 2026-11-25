@@ -19,11 +19,8 @@ const config = {
   title: '字体百科',
   siteUrl: 'https://summerset-zz.github.io/lightwiki-demo-fontcover',
   basePath: env.LIGHTWIKI_BASE_PATH ?? '/',
-  defaultLanguage: 'en',
-  content: {
-    en: 'content/en',
-    zh: 'content/zh',
-  },
+  lang: 'zh',
+  content: 'content/zh',
   sections: ['basics', 'fields', 'unicode', 'scripts', 'design', 'dev', 'tools', 'reference', 'legal'],
   outputDir: 'dist',
 };

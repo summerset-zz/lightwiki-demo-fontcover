@@ -28,19 +28,19 @@ draft: false
 
 字距是**相对字号**的量。0.05em 在 12px 上是 0.6px，在 96px 上是 4.8px，比例一致；写成 px 的话，换个字号就得重算一遍，而且换完之后看起来的松紧是两回事。
 
-行高也一样：`line-height: 1.35` 这种**无单位**的写法，是「字号的倍数」，子元素继承的是倍数而不是某一刻算出来的像素值。写成 `21px` 就会被继承成固定的 21px，字号一变大就挤在一起 —— 这也是行高那一条要专门写一篇的原因，见 [行高与 leading](/docs/line-height-leading)。
+行高也一样：`line-height: 1.35` 这种**无单位**的写法，是「字号的倍数」，子元素继承的是倍数而不是某一刻算出来的像素值。写成 `21px` 就会被继承成固定的 21px，字号一变大就挤在一起 —— 这也是行高那一条要专门写一篇的原因，见 [行高与 leading](/)line-height-leading)。
 
 ## 关掉合成粗体，是在看什么 {#no-synthesis}
 
 字重、斜体在 CSS 里只是一句声明。如果这个字体**没有**那一档，浏览器通常会自己「合成」一个：把轮廓整体加粗一点、或者倾斜一下 —— 看着像粗体，其实不是设计师画的那一档，字距、笔画交接、细节全都没被重画。
 
-勾上 No synthetic bold（`font-synthesis: none`），浏览器就只能老实交代：**这一档有没有真的字形，一眼看得出来**。所以这个开关不是审美选项，是**验收工具**：判断一个家族是「四个真字重」还是「两个字重 + 两次合成」，靠它最快。字重的概念见 [字重与宽度](/docs/weights-widths)。
+勾上 No synthetic bold（`font-synthesis: none`），浏览器就只能老实交代：**这一档有没有真的字形，一眼看得出来**。所以这个开关不是审美选项，是**验收工具**：判断一个家族是「四个真字重」还是「两个字重 + 两次合成」，靠它最快。字重的概念见 [字重与宽度](/)weights-widths)。
 
 ## 面板不假装 {#not-ready}
 
 还没载入字体时，舞台仍然渲染（用页面自己的字体），控件照样能动 —— 那是为了让你看清每个开关在做什么。但面板顶上那行状态会明说「还没载入，下面的预览用的是页面自己的字体」，不会让你以为看到的是目标字体。
 
-这也是[哪些字体可以测试](/docs/which-fonts-can-be-tested)那篇的前提：库里的字体没有字节，本机字体要授权，两条路都走不通时，这块面板就只能摆着控件。
+这也是[哪些字体可以测试](/)which-fonts-can-be-tested)那篇的前提：库里的字体没有字节，本机字体要授权，两条路都走不通时，这块面板就只能摆着控件。
 
 ## 两件故意没做的事 {#not-included}
 
@@ -56,8 +56,8 @@ draft: false
 
 ## 延伸阅读 {#further}
 
-- [行高与 leading](/docs/line-height-leading)
-- [字距与字偶距](/docs/tracking-kerning)
-- [字重与宽度](/docs/weights-widths)
-- [哪些字体可以测试](/docs/which-fonts-can-be-tested)
-- [CSS：font-weight](/docs/css-font-weight)、[CSS：行高](/docs/css-line-height)
+- [行高与 leading](/)line-height-leading)
+- [字距与字偶距](/)tracking-kerning)
+- [字重与宽度](/)weights-widths)
+- [哪些字体可以测试](/)which-fonts-can-be-tested)
+- [CSS：font-weight](/)css-font-weight)、[CSS：行高](/)css-line-height)

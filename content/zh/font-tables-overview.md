@@ -23,13 +23,13 @@ OpenType 从 TrueType 继承了这个结构。最大的好处是**可选**：一
 
 | 表 | 管什么 | 展开 |
 | --- | --- | --- |
-| `head` | 全局参数：`unitsPerEm`（字体单位一格多细）、整体包围盒、`macStyle` | [head / hhea / post](/docs/head-hhea-post) |
-| `name` | 所有名字：家族名、子家族名、PostScript 名、版权与许可证 | [name 表](/docs/name-table) |
-| `OS/2` | 字重、字宽、`fsSelection`、排版用的上下伸、x 高度、大写高度 | [OS/2 表](/docs/os2-table) |
-| `hhea` | 水平排版的三条基准：ascender / descender / lineGap | [head / hhea / post](/docs/head-hhea-post) |
-| `cmap` | 字符码位 → 字形索引。**这个字体有没有这个字就看它** | [cmap 表](/docs/cmap-table) |
+| `head` | 全局参数：`unitsPerEm`（字体单位一格多细）、整体包围盒、`macStyle` | [head / hhea / post](/)head-hhea-post) |
+| `name` | 所有名字：家族名、子家族名、PostScript 名、版权与许可证 | [name 表](/)name-table) |
+| `OS/2` | 字重、字宽、`fsSelection`、排版用的上下伸、x 高度、大写高度 | [OS/2 表](/)os2-table) |
+| `hhea` | 水平排版的三条基准：ascender / descender / lineGap | [head / hhea / post](/)head-hhea-post) |
+| `cmap` | 字符码位 → 字形索引。**这个字体有没有这个字就看它** | [cmap 表](/)cmap-table) |
 | `maxp` | 一共有多少个字形 | 见下面其余的表 |
-| `post` | 斜体角度、下划线位置与粗细、PostScript 名 | [head / hhea / post](/docs/head-hhea-post) |
+| `post` | 斜体角度、下划线位置与粗细、PostScript 名 | [head / hhea / post](/)head-hhea-post) |
 
 读这七张，就能回答本站检查器里绝大部分问题：这个字体叫什么、有多重、上下伸多少、认哪些字符。
 
@@ -38,7 +38,7 @@ OpenType 从 TrueType 继承了这个结构。最大的好处是**可选**：一
 | 表 | 管什么 |
 | --- | --- |
 | `glyf` / `CFF` / `CFF2` | 真正的字形轮廓（TrueType 用 `glyf`，OpenType/CFF 用 `CFF`） |
-| `GSUB` / `GPOS` / `GDEF` | 布局：连字、小型大写、字偶距、上下标（见 [GSUB / GPOS](/docs/gsub-gpos)） |
+| `GSUB` / `GPOS` / `GDEF` | 布局：连字、小型大写、字偶距、上下标（见 [GSUB / GPOS](/)gsub-gpos)） |
 | `fvar` / `gvar` / `avar` / `STAT` | 变量字体：轴、每个轴上的字形变化、命名实例 |
 | `cvt` / `fpgm` / `prep` | hinting 指令 |
 | `DSIG` | 数字签名。实践里基本没人用 |

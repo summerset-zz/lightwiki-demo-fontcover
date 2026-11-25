@@ -128,4 +128,4 @@ body {
 
 - MDN：`font-variant-*`、`font-feature-settings`、`font-kerning`
 - CSS Fonts 规范：`font-variant` 属性与特性标签的映射
-- 本站：[GSUB 与 GPOS](/docs/gsub-gpos)、[OpenType 特性](/docs/opentype-features-design)
+- 本站：[GSUB 与 GPOS](/)gsub-gpos)、[OpenType 特性](/)opentype-features-design)

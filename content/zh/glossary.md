@@ -24,10 +24,10 @@ draft: false
 | 斜体 | italic | 单独画过的倾斜字形 |
 | 伪斜体 | oblique | 把正体强行倾斜出来，没有单独设计字形 |
 | 变量字体 | variable font | 一个文件里含连续的轴，能出无数个字重与字宽 |
-| 光学尺寸 | optical size | 同一设计为不同字号各画一套：小字号更粗、字距更松（见 [光学尺寸轴](/docs/variable-fonts-design#opsz)）|
+| 光学尺寸 | optical size | 同一设计为不同字号各画一套：小字号更粗、字距更松（见 [光学尺寸轴](/)variable-fonts-design#opsz)）|
 | 静态字体 | static font | 一个字重一个文件（传统做法） |
 
-这几个词为什么必须分清，见 [字体、家族与字款](/docs/fonts-families-faces)。
+这几个词为什么必须分清，见 [字体、家族与字款](/)fonts-families-faces)。
 
 ## 字形与轮廓 {#glyph}
 
@@ -88,7 +88,7 @@ draft: false
 | 变音符 | diacritic | 附加在字母上的点、横、撇，如 é 上的重音符 |
 | 字素簇 | grapheme cluster | 用户眼里的「一个字」，可能由好几个码位叠出来 |
 
-四类文字的差别见 [书写系统一览](/writing-systems)；连写与双向的坑见 [书写方向与连写](/docs/writing-direction)；变音符与字素簇见 [组合字符](/docs/combining-character)。
+四类文字的差别见 [书写系统一览](/writing-systems)；连写与双向的坑见 [书写方向与连写](/)writing-direction)；变音符与字素簇见 [组合字符](/)combining-character)。
 
 ## CSS 与网页 {#css}
 
@@ -102,11 +102,11 @@ draft: false
 
 ## 站内相关文章 {#related}
 
-- [字体文件里有哪几张表](/docs/font-tables-overview)：每个字段出自哪里
-- [码位、U+、平面与代理对](/docs/unicode-codepoints)、[区块与已分配](/docs/unicode-blocks)：Unicode 那一半
-- [行高（leading）](/docs/line-height-leading)、[字距与字偶距](/docs/tracking-kerning)：设计师常用的两个词
-- [font-family 与回退栈](/docs/css-font-family)、[font-weight 与 bold 的对应](/docs/css-font-weight)：前端那一套
-- [度量图怎么读](/docs/how-to-read-metrics)：把上面这些数值落到一张图上
+- [字体文件里有哪几张表](/)font-tables-overview)：每个字段出自哪里
+- [码位、U+、平面与代理对](/)unicode-codepoints)、[区块与已分配](/)unicode-blocks)：Unicode 那一半
+- [行高（leading）](/)line-height-leading)、[字距与字偶距](/)tracking-kerning)：设计师常用的两个词
+- [font-family 与回退栈](/)css-font-family)、[font-weight 与 bold 的对应](/)css-font-weight)：前端那一套
+- [度量图怎么读](/)how-to-read-metrics)：把上面这些数值落到一张图上
 
 ## 延伸阅读
 

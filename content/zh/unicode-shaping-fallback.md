@@ -26,7 +26,7 @@ draft: false
 
 阿拉伯文的字母有**词首、词中、词尾、独立**四种形态，选哪一种取决于它在词里的位置。这不是一个字符换一个字形能表达的，必须看上下文。
 
-所以同一串码位，在不同语言环境下排出来可能完全不同，这也是 [GSUB / GPOS](/docs/gsub-gpos) 里 `locl` 与上下文替换存在的原因。
+所以同一串码位，在不同语言环境下排出来可能完全不同，这也是 [GSUB / GPOS](/)gsub-gpos) 里 `locl` 与上下文替换存在的原因。
 
 ## 回退：找不到就换字体 {#fallback}
 <!-- hint: 回退 | 字体缺少某个字符的字形时，浏览器按 font-family 的顺序改用下一个字体。一行中出现两种字体就是这个原因。 -->
@@ -68,4 +68,4 @@ draft: false
 
 - OpenType 规范：整形（shaping）与 `GSUB` / `GPOS`
 - HarfBuzz 文档：一个广泛使用的整形引擎
-- 本站：[GSUB / GPOS](/docs/gsub-gpos)、[字符属性](/docs/unicode-character-properties)
+- 本站：[GSUB / GPOS](/)gsub-gpos)、[字符属性](/)unicode-character-properties)

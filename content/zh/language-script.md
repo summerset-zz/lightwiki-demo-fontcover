@@ -22,7 +22,7 @@ draft: false
 
 - 一种语言可以用**两种文字**写：塞尔维亚语用西里尔（`српски`）也可以写拉丁（`srpski`）；汉语有简体与繁体两套写法；
 - 一种文字服务**很多语言**：拉丁字母撑着西欧大半个语族，阿拉伯字母服务阿拉伯语、波斯语、乌尔都语；
-- 同一个文字里**方向也可能变**：中文古书竖排，现代网页横排（见 [书写方向](/docs/writing-direction)）。
+- 同一个文字里**方向也可能变**：中文古书竖排，现代网页横排（见 [书写方向](/)writing-direction)）。
 
 ## 语言标记：`zh-CN` 到底在说什么 {#language-tags}
 <!-- hint: 语言标记 | BCP 47 标记可以只写地区（zh-CN），也可以只写文字（zh-Hant）。地区与文字是两个维度。 -->
@@ -165,7 +165,7 @@ CJK 兼容汉字区（`U+F900`–`FAFF`）里有一批字，是为了跟老编�
 | 漢 | `U+6F22` | `U+FA9A` |
 | 海 | `U+6D77` | `U+FA45` |
 
-它们有**规范分解**（见 [字符属性](/docs/unicode-character-properties#canonical)）：`U+F902` 分解成 `U+8ECA`。所以任何形式的 `normalize()` 都会把它们合并回本位那个。
+它们有**规范分解**（见 [字符属性](/)unicode-character-properties#canonical)）：`U+F902` 分解成 `U+8ECA`。所以任何形式的 `normalize()` 都会把它们合并回本位那个。
 
 ⚠️ 但**不 normalize 的字符串比较**里它们是两个字符，老系统导出的文本、从 PDF 复制出来的文本里经常能碰到。处理用户输入时先 `normalize('NFC')`，这类问题自动消失。
 
@@ -173,7 +173,7 @@ CJK 兼容汉字区（`U+F900`–`FAFF`）里有一批字，是为了跟老编�
 
 一个码位对应多个字形，而又必须**明确**说“我要这个写法”（人名、古籍、商标）时，用变体选择符：码位后面跟 `U+FE00`–`FE0F` 或 `U+E0100`–`E01EF`。字体要在 `cmap` 的变体序列表里声明支持哪些组合，这套机制叫 IVS（Ideographic Variation Sequence）。
 
-也就是 [码位与平面](/docs/unicode-codepoints#variation-selectors) 里说过的同一个东西，只是汉字这边用得最多。
+也就是 [码位与平面](/)unicode-codepoints#variation-selectors) 里说过的同一个东西，只是汉字这边用得最多。
 
 ## 从一段文本推断书写系统 {#inferring}
 
@@ -219,4 +219,4 @@ CJK 兼容汉字区（`U+F900`–`FAFF`）里有一批字，是为了跟老编�
 - ISO 15924（文字代码表，`unicode.org/iso15924/`）
 - UAX #24（Unicode Script Property）、`Scripts.txt` / `ScriptExtensions.txt`
 - CLDR 的 `exemplarCharacters`（各语言的常用字符集）
-- 本站：[字符属性](/docs/unicode-character-properties#script)（`script` 作为字符属性）、[书写方向](/docs/writing-direction)
+- 本站：[字符属性](/)unicode-character-properties#script)（`script` 作为字符属性）、[书写方向](/)writing-direction)

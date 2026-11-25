@@ -97,7 +97,7 @@ draft: false
 
 `a` 与 `g` 各有两种基本结构：**双层**（double-storey：上面一个小碗 + 下面一个大碗）与**单层**（single-storey：一个碗加一根尾巴）。手写体与部分几何无衬线体用单层，正文衬线体几乎都是双层。
 
-儿童读物常整套换成单层的 `a`、`g`（有时还有 `t`、`y`、`l` 与数字 `4`），叫 **schoolbook** 或 infant 替代字形，理由是它们更像手写。这类替代字现在通常是同一个文件里的另一组字形，靠样式替代特性打开（见 [OpenType 特性](/docs/opentype-features-design#common)），而不是另买一套字体。
+儿童读物常整套换成单层的 `a`、`g`（有时还有 `t`、`y`、`l` 与数字 `4`），叫 **schoolbook** 或 infant 替代字形，理由是它们更像手写。这类替代字现在通常是同一个文件里的另一组字形，靠样式替代特性打开（见 [OpenType 特性](/)opentype-features-design#common)），而不是另买一套字体。
 
 ## 在本站哪里看 {#how-to-see}
 
@@ -113,4 +113,4 @@ draft: false
 ## 延伸阅读
 
 - OpenType 规范：`OS/2` 的 `sxHeight` / `sCapHeight`
-- 本站：[head、hhea 与 post](/docs/head-hhea-post)、[度量图怎么读](/docs/how-to-read-metrics)
+- 本站：[head、hhea 与 post](/)head-hhea-post)、[度量图怎么读](/)how-to-read-metrics)

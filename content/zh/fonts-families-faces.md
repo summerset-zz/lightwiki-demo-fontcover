@@ -23,7 +23,7 @@ draft: false
 
 ## 名字是怎么落到这些概念上的 {#naming}
 
-字体文件里并没有 family 和 face 两个字段，只有一串名字记录（见 [name 表](/docs/name-table)）：家族名、子家族名、PostScript 名，各语言各平台可能各写一份。
+字体文件里并没有 family 和 face 两个字段，只有一串名字记录（见 [name 表](/)name-table)）：家族名、子家族名、PostScript 名，各语言各平台可能各写一份。
 
 软件把这些名字拼成两个概念：
 
@@ -51,7 +51,7 @@ draft: false
 | 衬线 | 衬线体 / 无衬线体 | 笔画末端有没有那个“小脚”；中文对应宋体与黑体 |
 | 比例 | 窄（condensed）/ 宽（extended） | 相对正常宽度压缩或拉伸，`wdth` 轴管的就是它 |
 | 用途 | 正文体 / 特排体（display） | 特排体为大字号设计：笔画更细、字距更紧、细节更多，拿它排小字就糊 |
-| 对比 | 正常 / 反对比 | 粗细关系的翻转，见 [排印术语](/docs/typographic-anatomy#stress) |
+| 对比 | 正常 / 反对比 | 粗细关系的翻转，见 [排印术语](/)typographic-anatomy#stress) |
 
 一个家族通常在四维里挑一个组合固定下来。所以“思源宋体”不是一个字体，而是“宋体 + 一组字重”的一整片；“思源宋体 Condensed”是同一套设计在比例维度上另一个位置。
 
@@ -70,7 +70,7 @@ draft: false
 
 ## 一个常见的误判 {#pitfall}
 
-“我的电脑上有 [Arial](/fonts/arial-regular)”不等于“网页上写 `Arial` 会得到 Arial”：网页字体还要看访客机器、`@font-face` 与回退栈。这部分在 [@font-face 逐项](/docs/css-font-face) 里讲。
+“我的电脑上有 [Arial](/fonts/arial-regular)”不等于“网页上写 `Arial` 会得到 Arial”：网页字体还要看访客机器、`@font-face` 与回退栈。这部分在 [@font-face 逐项](/)css-font-face) 里讲。
 
 ## 延伸阅读
 

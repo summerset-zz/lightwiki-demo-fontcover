@@ -23,13 +23,13 @@ PostScript字体也可以单独用于指代PostScript系统中作为标准包括
 
 Adobe在1984年的PostScript页面描述语言中定义了Type 1和Type 3字体格式。但在1985年3月支持PostScript的激光打印机Apple LaserWriter面世，它才真正流行起来。在当时，轮廓字体只在打印机中使用，屏幕上依旧用位图字体（bitmap fonts）。
 
-尽管在最初，Type 1字体是作为PostScript的一部分出现的，其所采用的一组绘制操作要比普通的PostScript简单（和PDF相类似，循环和变量等编程特性被移除了），但是增加了渲染提示（hints）以提升低分辨率渲染效果。开始的时候，Adobe并没有公开渲染提示方案的细节，用一种简单的加密方案将Type 1轮廓数据和渲染提示保护了起来，加密也延续至今（尽管加密方案和密钥早已被Adobe公开）。但这一加密方案很快被业界同行的反向工程所破解。虽然如此，Adobe仍要求Type 1字体技术的使用者需要许可证授权。许可证的要价在当时看来是颇高的，Adobe的坚守让价格居高不下。正因如此，苹果公司于1991年决定开发自己的[TrueType](/docs/truetype)格式。TrueType一经发布，Adobe就公开了Type 1字体格式的定义和说明。
+尽管在最初，Type 1字体是作为PostScript的一部分出现的，其所采用的一组绘制操作要比普通的PostScript简单（和PDF相类似，循环和变量等编程特性被移除了），但是增加了渲染提示（hints）以提升低分辨率渲染效果。开始的时候，Adobe并没有公开渲染提示方案的细节，用一种简单的加密方案将Type 1轮廓数据和渲染提示保护了起来，加密也延续至今（尽管加密方案和密钥早已被Adobe公开）。但这一加密方案很快被业界同行的反向工程所破解。虽然如此，Adobe仍要求Type 1字体技术的使用者需要许可证授权。许可证的要价在当时看来是颇高的，Adobe的坚守让价格居高不下。正因如此，苹果公司于1991年决定开发自己的[TrueType](/)truetype)格式。TrueType一经发布，Adobe就公开了Type 1字体格式的定义和说明。
 
-Type 3字体支持PostScript语言的全部特性，但是没有标准的渲染提示实现，也没有加密方案。而Type 2字体成为了现代[OpenType](/docs/opentype)字体格式的基础之一。
+Type 3字体支持PostScript语言的全部特性，但是没有标准的渲染提示实现，也没有加密方案。而Type 2字体成为了现代[OpenType](/)opentype)字体格式的基础之一。
 
 ## 技术 {#技术}
 
-字形（glyph）通过PostScript（PS）语言用三阶贝塞尔曲线（[TrueType](/docs/truetype)使用二阶贝塞尔曲线）描述，字形因此可以通过简单的数学变换调整大小，然后被送到PostScript打印机中。因为Type 1数据描述的是字形的轮廓而不是栅格化的图像（即位图），Type 1字体通常被称为“轮廓字体”，以和位图字体（bitmap fonts）相对比。为了满足需要在屏幕上预览字体的用户，利用渲染提示（hints）和抗锯齿技术可以让文字显示效果变得平滑易认。有时也会加入相同字体的位图版本优化屏幕显示。Adobe Type Manager实用程序可以显示Type 1字体。
+字形（glyph）通过PostScript（PS）语言用三阶贝塞尔曲线（[TrueType](/)truetype)使用二阶贝塞尔曲线）描述，字形因此可以通过简单的数学变换调整大小，然后被送到PostScript打印机中。因为Type 1数据描述的是字形的轮廓而不是栅格化的图像（即位图），Type 1字体通常被称为“轮廓字体”，以和位图字体（bitmap fonts）相对比。为了满足需要在屏幕上预览字体的用户，利用渲染提示（hints）和抗锯齿技术可以让文字显示效果变得平滑易认。有时也会加入相同字体的位图版本优化屏幕显示。Adobe Type Manager实用程序可以显示Type 1字体。
 
 ## 字体类型 {#字型类型}
 
@@ -45,7 +45,7 @@ Adobe已于2021年1月27日宣布将在2023年1月之后终止对Adobe产品中T
 
 ### Type 2 {#Type_2}
 
-Type 2的本质是一个字符串格式，用于在轮廓字体文件中对字符描述过程进行更为紧凑的表现形式，目的是用在紧凑字体格式（CFF，Compact Font Format）中。它通过使用多参数的运算符、各种预定义的默认值、更有效的编码值分配、字体间（一个字体家族内）共享子例程，它相较于Type 1可以占用更小的空间。 CFF/Type2 格式是 Type 1 OpenType 字体的基础，所以所谓的PostScript或Type 1风格[OpenType](/docs/opentype)字体，亦称为OpenType CFF，在CFF表中写入了字形轮廓和渲染提示。从PDF 文件 1.2 开始，CFF 字体可以嵌入PDF文档。
+Type 2的本质是一个字符串格式，用于在轮廓字体文件中对字符描述过程进行更为紧凑的表现形式，目的是用在紧凑字体格式（CFF，Compact Font Format）中。它通过使用多参数的运算符、各种预定义的默认值、更有效的编码值分配、字体间（一个字体家族内）共享子例程，它相较于Type 1可以占用更小的空间。 CFF/Type2 格式是 Type 1 OpenType 字体的基础，所以所谓的PostScript或Type 1风格[OpenType](/)opentype)字体，亦称为OpenType CFF，在CFF表中写入了字形轮廓和渲染提示。从PDF 文件 1.2 开始，CFF 字体可以嵌入PDF文档。
 
 ### Type 3 {#Type_3}
 
@@ -79,7 +79,7 @@ OCF 即Original Composite Font，是支持双字节文种（比如中文、日�
 
 ### CID字体 {#CID字型}
 
-**CID键字体**（亦称CID字体、CID基础字体，CID-keyed font, CID font, CID-based font；其中CID是Character Identifier Font的缩写，即“字符标识符字体”）原本是为PostScript开发的字体格式，设计用于制作字形数量庞大的字体。CID字体开发用于支持东亚文字集。支持异体字、可以PDF嵌入，也可包含字偶距信息。先对各个文种的字形赋予 CID 编号，再映射到各个文种的编码，这个映射关系存储在CMap（Character Map）数据文件中。一个字体文件里可以有多个CMap的映射，因此支持“字形与码位”之间一对多、多对一的复杂关系。具体分为sfn-CID 和 Naked-CID两种。与CID等同的结构被 [TrueType](/docs/truetype)、[OpenType](/docs/opentype)继承下来，但改称为GID（Glyph ID）。
+**CID键字体**（亦称CID字体、CID基础字体，CID-keyed font, CID font, CID-based font；其中CID是Character Identifier Font的缩写，即“字符标识符字体”）原本是为PostScript开发的字体格式，设计用于制作字形数量庞大的字体。CID字体开发用于支持东亚文字集。支持异体字、可以PDF嵌入，也可包含字偶距信息。先对各个文种的字形赋予 CID 编号，再映射到各个文种的编码，这个映射关系存储在CMap（Character Map）数据文件中。一个字体文件里可以有多个CMap的映射，因此支持“字形与码位”之间一对多、多对一的复杂关系。具体分为sfn-CID 和 Naked-CID两种。与CID等同的结构被 [TrueType](/)truetype)、[OpenType](/)opentype)继承下来，但改称为GID（Glyph ID）。
 
 ### CFF {#CFF}
 

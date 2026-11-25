@@ -18,7 +18,7 @@ draft: false
 - **图是派生的**：内容只由「字体轮廓 + 固定的样例清单 + 渲染版本号」决定，于是可以按内容寻址、永久缓存 —— 同一个字体再画一次字节完全一样；
 - **尺寸明确**：SVG 带 `width` / `height`，不会在加载时把页面顶来顶去。
 
-代价是：它画的是**我们预先决定的那几样东西**，不是「这个字体任意排一段」的效果。想要后者，用[排版面板](/docs/how-the-type-tester-works)。
+代价是：它画的是**我们预先决定的那几样东西**，不是「这个字体任意排一段」的效果。想要后者，用[排版面板](/)how-the-type-tester-works)。
 
 ## 判据：字母集覆盖到九成 {#threshold}
 
@@ -41,7 +41,7 @@ draft: false
 
 为什么后者不能也排成句子：排版引擎不是 HarfBuzz。连写、上下文替换、mark 定位这些**需要重排**的机制，我们这套渲染不做 —— 硬排出来会是错的，读者还会以为字体坏了。网格画的是「这个字体的字形本身」，诚实，而且正是想比较「这个区块里它到底画了什么」的人要的东西。
 
-顺带一个必须说清的：**阿拉伯文的网格图里是孤立形**，不是连写后的样子。这不是缺陷，网格本来只给单个字形；连写的道理见 [书写方向与连写](/docs/writing-direction)。
+顺带一个必须说清的：**阿拉伯文的网格图里是孤立形**，不是连写后的样子。这不是缺陷，网格本来只给单个字形；连写的道理见 [书写方向与连写](/)writing-direction)。
 
 ## 网格里那 48 个格子怎么挑 {#grid-picks}
 
@@ -73,8 +73,8 @@ draft: false
 
 ## 延伸阅读 {#further}
 
-- [覆盖率是怎么算的](/docs/how-coverage-is-calculated)
-- [书写系统一览](/writing-systems)、[语言与书写系统](/docs/language-script)
-- [字形、轮廓与 em 方框](/docs/glyph-outline-and-em)
-- [书写方向与连写](/docs/writing-direction)
-- [哪些字体可以测试](/docs/which-fonts-can-be-tested)
+- [覆盖率是怎么算的](/)how-coverage-is-calculated)
+- [书写系统一览](/writing-systems)、[语言与书写系统](/)language-script)
+- [字形、轮廓与 em 方框](/)glyph-outline-and-em)
+- [书写方向与连写](/)writing-direction)
+- [哪些字体可以测试](/)which-fonts-can-be-tested)

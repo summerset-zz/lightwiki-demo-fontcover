@@ -105,11 +105,11 @@ src: local('Inter'), url('/fonts/inter.woff2') format('woff2');
 
 浏览器只在这个范围内遇到字符时，才去下载这个文件。中文字体动辄几 MB，按 `unicode-range` 切成几十个分片，页面就只下载用到的那几片。代价是分片数量多、配置麻烦。
 
-它常被和“子集化”混为一谈，其实两者改的不是一回事：一个改文件内容，一个改下载量。区别与各自的代价见[按需加载与子集化](/docs/font-subsetting)。
+它常被和“子集化”混为一谈，其实两者改的不是一回事：一个改文件内容，一个改下载量。区别与各自的代价见[按需加载与子集化](/)font-subsetting)。
 
 ## font-display（先提一句）{#display}
 
-`block` / `swap` / `fallback` / `optional` 决定字体还没到的那几百毫秒显示什么。它是文字跳动（布局位移）的主要原因之一，展开在[字体加载](/docs/css-font-loading)里讲。
+`block` / `swap` / `fallback` / `optional` 决定字体还没到的那几百毫秒显示什么。它是文字跳动（布局位移）的主要原因之一，展开在[字体加载](/)css-font-loading)里讲。
 
 ## 本站的立场 {#this-site}
 

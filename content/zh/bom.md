@@ -26,7 +26,7 @@ BOM 是文件（或数据流）最前面那几个字节，用来告诉读它的�
 
 ## 为什么它有两个名字 {#two-names}
 
-`U+FEFF` 的正式名字是 `ZERO WIDTH NO-BREAK SPACE`（零宽不换行空格），而 `BYTE ORDER MARK` 是它的**旧名**（见 [字符属性](/docs/unicode-character-properties#old-name)）。今天所有人叫它 BOM，通用表里那个反而是“以前的名字”。
+`U+FEFF` 的正式名字是 `ZERO WIDTH NO-BREAK SPACE`（零宽不换行空格），而 `BYTE ORDER MARK` 是它的**旧名**（见 [字符属性](/)unicode-character-properties#old-name)）。今天所有人叫它 BOM，通用表里那个反而是“以前的名字”。
 
 为什么当初需要它：UTF-16 与 UTF-32 把码位拆成多个字节存放，“先放高位还是先放低位”历史上两种都有人做。同一串字节 `00 41`，大端读是 `U+0041`（`A`），小端读是 `U+4100`。开头放一个 `U+FEFF`，读的人一看字节顺序就知道按哪种字节顺序读，这正是“字节序标记”的字面意思。
 
@@ -99,4 +99,4 @@ UTF-8 是逐字节读的，没有“两个字节谁在前”的问题，所以 U
 
 - Unicode 标准第 2 章（通用结构）里关于 BOM 的那一节
 - RFC 3629（UTF-8）、RFC 8259（JSON）第 8.1 节
-- 本站：[字符属性](/docs/unicode-character-properties#old-name)（旧名）、[码位与平面](/docs/unicode-codepoints#encodings)（UTF-8 与 UTF-16）
+- 本站：[字符属性](/)unicode-character-properties#old-name)（旧名）、[码位与平面](/)unicode-codepoints#encodings)（UTF-8 与 UTF-16）

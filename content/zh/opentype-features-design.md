@@ -109,4 +109,4 @@ draft: false
 
 - OpenType 规范：feature tags 注册表
 - MDN：`font-variant-*`、`font-feature-settings`
-- 本站：[GSUB / GPOS](/docs/gsub-gpos)、[font-feature-settings 与 font-variant](/docs/css-opentype-features)
+- 本站：[GSUB / GPOS](/)gsub-gpos)、[font-feature-settings 与 font-variant](/)css-opentype-features)

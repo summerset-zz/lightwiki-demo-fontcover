@@ -15,13 +15,13 @@ sourceRetrieved: 2026-11-07
 sourceChanges: 删除了全部图片、公式、引用角标、信息框、表格标题与“参见 / 外部链接”类收尾小节；正文文字未改动。
 ---
 
-**OpenType**，是一种可缩放字型（scalable font）电脑字体类型，采用PostScript格式，是美国[微软](/credits/maker/microsoft)公司与[Adobe](/credits/maker/adobe-systems)公司联合开发，用来替代[TrueType](/docs/truetype)字型的新字型。这类字体的文件扩展名有`.otf`、`.ttf`、`.ttc`，类型代码是`OTTO`，现行标准为OpenType 1.9。
+**OpenType**，是一种可缩放字型（scalable font）电脑字体类型，采用PostScript格式，是美国[微软](/credits/maker/microsoft)公司与[Adobe](/credits/maker/adobe-systems)公司联合开发，用来替代[TrueType](/)truetype)字型的新字型。这类字体的文件扩展名有`.otf`、`.ttf`、`.ttc`，类型代码是`OTTO`，现行标准为OpenType 1.9。
 
-OpenType最初发表于1996年，并在2000年之后出现大量字体。它源于微软公司的TrueType Open字型，TrueType Open字型又源于[TrueType](/docs/truetype)字型。OpenType font包括了Adobe CID-Keyed font技术。Adobe公司已经在2002年末将其字体库全部改用OpenType格式。到2005年大概有一万多种OpenType字体，Adobe产品占了三分之一。
+OpenType最初发表于1996年，并在2000年之后出现大量字体。它源于微软公司的TrueType Open字型，TrueType Open字型又源于[TrueType](/)truetype)字型。OpenType font包括了Adobe CID-Keyed font技术。Adobe公司已经在2002年末将其字体库全部改用OpenType格式。到2005年大概有一万多种OpenType字体，Adobe产品占了三分之一。
 
 ## 历史 {#历史}
 
-OpenType之前的主流是苹果公司和微软开发的[TrueType](/docs/truetype)类型，还有Adobe公司开发的Type 1（PostScript）字体类型。微软在1994年独自开发了“TrueType Open”类型，之后1996年Adobe加入开发，增加了其在Type 1字体中使用的对字体轮廓的支持，OpenType这个名字于是便用来称呼合并之后的技术。
+OpenType之前的主流是苹果公司和微软开发的[TrueType](/)truetype)类型，还有Adobe公司开发的Type 1（PostScript）字体类型。微软在1994年独自开发了“TrueType Open”类型，之后1996年Adobe加入开发，增加了其在Type 1字体中使用的对字体轮廓的支持，OpenType这个名字于是便用来称呼合并之后的技术。
 
 在后来的十几年中，Adobe和微软继续开发改进OpenType格式，在2005年末，OpenType开始申请成为国际标准组织（ISO）的公开标准。这个新标准已经升级到OpenType 1.4，以适应ISO语言标准的一些变化，之后其被称为“开放字体类型（Open Font Format）”。这个标准在2007年3月以ISO/IEC 14496-22发布。
 
@@ -128,7 +128,7 @@ Mac OS X v10.4及其之后系统中的Apple Advanced Typography也支持OpenType
 
 为了处理这些冷僻字，先前已经出现过很多方案，比如在统一码中的私用区域（Private use area）增加编码等。这样的处理方法无法在制定环境以外的地方使用，基于私用区域编码的统一码制作的文档无法通用。另外一个办法就是将其处理成图像，这又导致文字排版的麻烦，因为版面指令无法作用于图像，无法被当成文本搜索，而且由于机器从字体描绘字形和描绘图像的机制完全不同，这样的处理导致插入的冷僻字看起来很突兀。
 
-SING技术是和Adobe Creative Suite 2一起发布的，它允许用户创建新字形，每个新字形作为一个独立的字体打包。这样打包出来的字形称为*字形包（glyphlet）*。这种格式通过Adobe公开的，且基于OpenType。这个包的内容包括字形的[TrueType](/docs/truetype)或CFF轮廓样式，标准OpenType表格，声明字形的尺寸和组合行为，以及元数据，附加信息，如字形包的认证、所属，还有读音或者部首分类等语言方面的分类等。SING字形包也可以使用Fontlab公司的SigMaker3程序创建。
+SING技术是和Adobe Creative Suite 2一起发布的，它允许用户创建新字形，每个新字形作为一个独立的字体打包。这样打包出来的字形称为*字形包（glyphlet）*。这种格式通过Adobe公开的，且基于OpenType。这个包的内容包括字形的[TrueType](/)truetype)或CFF轮廓样式，标准OpenType表格，声明字形的尺寸和组合行为，以及元数据，附加信息，如字形包的认证、所属，还有读音或者部首分类等语言方面的分类等。SING字形包也可以使用Fontlab公司的SigMaker3程序创建。
 
 SING（Smart INdependent Glyphlets，智能独立字形包）的规范允许字形包随同文件一起传送，这样包含SING字符的文件也是可携带的，而又不会字符乱码、异常显示。由于字形包的基础是OpenType字体，标准字体机制可以对其进行正常描画。SING规范也可以表述成XML格式，包括在二进制格式中重建字形的所有必要数据。一般情况下，一个字形包需要1-2 kB大小的容量。
 

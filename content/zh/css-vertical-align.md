@@ -136,4 +136,4 @@ div { line-height: 0; }              /* 或者把行高归零（小心影响其�
 
 - MDN：`vertical-align`
 - CSS Inline Layout 规范：行盒、基线与 `vertical-align`
-- 本站：[line-height](/docs/css-line-height)、[合成与杂项](/docs/css-text-misc)
+- 本站：[line-height](/)css-line-height)、[合成与杂项](/)css-text-misc)

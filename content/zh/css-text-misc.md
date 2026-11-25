@@ -120,7 +120,7 @@ sup { vertical-align: super; font-size: 0.75em; }
 想让一个块垂直居中，用 flex / grid；`vertical-align: middle` 对一个 `div` 通常什么也不会发生。
 一期做排版测试时这一项是**故意没做**的：单块文本里没有行内元素，它无从作用。
 
-取值、`inline-block` 的基线怎么定、图片底部那道缝怎么消，展开在 [vertical-align](/docs/css-vertical-align)。
+取值、`inline-block` 的基线怎么定、图片底部那道缝怎么消，展开在 [vertical-align](/)css-vertical-align)。
 
 ## text-rendering：基本别碰 {#text-rendering}
 
@@ -165,4 +165,4 @@ a {
 
 - MDN：`font-synthesis`、`font-size-adjust`、`vertical-align`、`text-decoration`
 - CSS Fonts 规范：`@font-face` 的 `size-adjust` 与 `font-size-adjust`
-- 本站：[font-weight 与 bold 的对应](/docs/css-font-weight)
+- 本站：[font-weight 与 bold 的对应](/)css-font-weight)

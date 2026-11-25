@@ -61,7 +61,7 @@ draft: false
 这些差异由 `locl` 特性按语言切换。所以：
 
 - 中文页面上的日文字体看起来怪，不一定是字体坏了，而是它按日文标准画；
-- 做多语言站点时，`lang` 属性会影响字形（见 [GSUB / GPOS](/docs/gsub-gpos)）。
+- 做多语言站点时，`lang` 属性会影响字形（见 [GSUB / GPOS](/)gsub-gpos)）。
 
 把方向换一下：竖排时标点会旋转、括号会换向，而这取决于字体有没有 `vert`。
 
@@ -131,4 +131,4 @@ CSS 用 `writing-mode: vertical-rl`。**字体必须支持竖排**，否则括�
 
 - W3C：中文排版需求（Chinese Layout Requirements）
 - CSS Text：`text-autospace`、`text-spacing-trim`
-- 本站：[GSUB / GPOS](/docs/gsub-gpos)、[行高（leading）](/docs/line-height-leading)
+- 本站：[GSUB / GPOS](/)gsub-gpos)、[行高（leading）](/)line-height-leading)

@@ -46,7 +46,7 @@ draft: false
 
 字体可以只覆盖注册轴的一段区间，默认值也不必等于规范里的标准值 —— 看到 `wght` 默认是 300 的字体不必奇怪，那是设计取舍。除注册轴之外，字体还能定义**自定义轴**（同样是四字符标签，含义由字体自己规定），这类轴不保证跨字体通用。
 
-这些信息都在 `fvar` 表里：每根轴一条记录（标签、最小值、默认值、最大值），命名实例也记在这里。检查器里的「变量轴」一栏读的就是它，见 [maxp 与变量轴](/docs/maxp-fvar-stat)。
+这些信息都在 `fvar` 表里：每根轴一条记录（标签、最小值、默认值、最大值），命名实例也记在这里。检查器里的「变量轴」一栏读的就是它，见 [maxp 与变量轴](/)maxp-fvar-stat)。
 
 ## 光学尺寸是最值得理解的轴 {#opsz}
 
@@ -95,4 +95,4 @@ h1 {
 
 - OpenType 规范：`fvar`、`gvar`、`STAT`
 - MDN：`font-variation-settings`、`font-optical-sizing`、`font-stretch`
-- 本站：[maxp 与变量轴](/docs/maxp-fvar-stat)、[字重与字宽](/docs/weights-widths)
+- 本站：[maxp 与变量轴](/)maxp-fvar-stat)、[字重与字宽](/)weights-widths)

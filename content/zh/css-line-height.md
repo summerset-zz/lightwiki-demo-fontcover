@@ -136,7 +136,7 @@ h3 {
 
 ## 和字体的关系 {#with-font}
 
-字体文件里的 `hhea.ascender` / `descender` / `lineGap`（以及 `OS/2` 里的两组度量）决定了 1 倍行高的自然高度。想弄清为什么某个字体在高行高下显得松散，看 [head、hhea 与 post](/docs/head-hhea-post)。
+字体文件里的 `hhea.ascender` / `descender` / `lineGap`（以及 `OS/2` 里的两组度量）决定了 1 倍行高的自然高度。想弄清为什么某个字体在高行高下显得松散，看 [head、hhea 与 post](/)head-hhea-post)。
 
 ## 延伸阅读
 

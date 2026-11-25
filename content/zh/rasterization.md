@@ -12,7 +12,7 @@ draft: false
 
 ## 轮廓不是像素 {#pipeline}
 
-轮廓是贝塞尔曲线（见 [字形与 em 方框](/docs/glyph-outline-and-em)），跟“一个像素”没有关系。光栅化要做的是：把曲线按当前字号、屏幕 DPI、系统缩放映射到一张像素网格上，再决定**每个格子要多黑**。
+轮廓是贝塞尔曲线（见 [字形与 em 方框](/)glyph-outline-and-em)），跟“一个像素”没有关系。光栅化要做的是：把曲线按当前字号、屏幕 DPI、系统缩放映射到一张像素网格上，再决定**每个格子要多黑**。
 
 三个只在光栅化阶段才存在的量：
 
@@ -129,7 +129,7 @@ ClearType 就是 Windows 上这么做的实现（macOS 早期叫 subpixel antial
 - **HiDPI**：手机、笔记本普遍 2–3 倍屏。1 个 CSS px 对应 2–3 个设备像素，一个边缘像素本来就小了三分之二，“再抢回三分之一像素”的收益随之变小；
 - **macOS 从 Mojave（10.14）起关掉了次像素抗锯齿**，回到灰度抗锯齿，理由是高分辨率下它已不划算，而彩边与字形设计相冲；
 - Windows 保留 ClearType，但在非整数缩放、平板模式、某些驱动下会失效；
-- 网页字体常常不带 hinting 指令，小字号下笔画的落点规则也跟着变（见 [hinting](/docs/glyph-outline-and-em#hinting)）。
+- 网页字体常常不带 hinting 指令，小字号下笔画的落点规则也跟着变（见 [hinting](/)glyph-outline-and-em#hinting)）。
 
 ## 所以“两个平台看起来不一样”是正常的 {#why-different}
 
@@ -146,7 +146,7 @@ ClearType 就是 Windows 上这么做的实现（macOS 早期叫 subpixel antial
 | `-webkit-font-smoothing: antialiased` | **只对 macOS 上的 Safari / Chrome 有效**（关掉次像素渲染），Windows 上不做任何事 |
 | `-moz-osx-font-smoothing: grayscale` | 同上，Firefox 的 macOS 版本 |
 | `font-smooth` | 非标准，各实现不一致，不要依赖 |
-| `text-rendering: optimizeLegibility` | 与抗锯齿无关，它管连字与字偶距（见 [合成与杂项](/docs/css-text-misc)） |
+| `text-rendering: optimizeLegibility` | 与抗锯齿无关，它管连字与字偶距（见 [合成与杂项](/)css-text-misc)） |
 
 真正能改善观感的还是老办法：字号别选 11px 这种临界值、图表用足够的尺寸、以及选一款在小字号下设计得清楚的字体。
 
@@ -172,4 +172,4 @@ ClearType 就是 Windows 上这么做的实现（macOS 早期叫 subpixel antial
 
 - Microsoft：ClearType 与 DirectWrite 的抗锯齿说明
 - Apple：macOS Mojave 移除次像素抗锯齿的说明
-- 本站：[字形与 em 方框](/docs/glyph-outline-and-em)、[度量图怎么读](/docs/how-to-read-metrics)
+- 本站：[字形与 em 方框](/)glyph-outline-and-em)、[度量图怎么读](/)how-to-read-metrics)

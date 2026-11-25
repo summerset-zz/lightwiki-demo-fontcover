@@ -106,12 +106,12 @@ String.fromCodePoint(0x1F600) // '😀'
 | `²` 上标 2 | `U+00B2` | `2` |
 | `①` 带圈数字 1 | `U+2460` | 数字 1（但多一层“列表项”的意思） |
 
-它们都带一条 `<compat>` 分解，指回普通写法 —— 就是 [字符属性](/docs/unicode-character-properties#decomposition) 里那列“兼容分解”。由此有两条规矩：
+它们都带一条 `<compat>` 分解，指回普通写法 —— 就是 [字符属性](/)unicode-character-properties#decomposition) 里那列“兼容分解”。由此有两条规矩：
 
 1. **新写的文本里不要用**：`ﬁ` 与 `fi` 看着一样，但搜 `fi` 搜不到 `ﬁ`，排序、大小写转换也各走各的；
 2. **要折叠就用 NFKC**：`'ﬁ'.normalize('NFKC')` 得到 `fi`，而 `NFC` 不会动它。反过来，别拿它处理密码、标识符、文件名 —— 那是在静默改用户的数据。
 
-这类码位最集中的地方是阿拉伯文：Unicode 里有 730 个阿拉伯文**呈现形式**，它们分解回 88 个基本字母。原因是阿拉伯字母在词首、词中、词尾、单独出现时形状不同，而旧编码把每种形状都编成了码位。Unicode 的做法是只编基本字母，形状交给字体与排版引擎算（见 [整形与回退](/docs/unicode-shaping-fallback)）。
+这类码位最集中的地方是阿拉伯文：Unicode 里有 730 个阿拉伯文**呈现形式**，它们分解回 88 个基本字母。原因是阿拉伯字母在词首、词中、词尾、单独出现时形状不同，而旧编码把每种形状都编成了码位。Unicode 的做法是只编基本字母，形状交给字体与排版引擎算（见 [整形与回退](/)unicode-shaping-fallback)）。
 
 ## 本站怎么展示 {#this-site}
 
@@ -122,4 +122,4 @@ String.fromCodePoint(0x1F600) // '😀'
 - Unicode 标准第 2 章（General Structure）
 - UAX #29（字素簇边界）
 - MDN：`String#codePointAt`、`String.fromCodePoint`
-- 本站：[emoji](/docs/emoji)（字符数、字节数与字素簇为什么是三个数）
+- 本站：[emoji](/)emoji)（字符数、字节数与字素簇为什么是三个数）

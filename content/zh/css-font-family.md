@@ -74,7 +74,7 @@ font-family: system-ui;
 `font-family: 'Inter'` 只在两种情况下生效：
 
 1. 访客机器上装了 Inter；
-2. 或者你的页面用 `@font-face` 定义了一个叫 Inter 的字体族（见 [@font-face 逐项](/docs/css-font-face)）。
+2. 或者你的页面用 `@font-face` 定义了一个叫 Inter 的字体族（见 [@font-face 逐项](/)css-font-face)）。
 
 你自己电脑上装了，不代表访客装了。这也是本站“生成 CSS”的提示所讲的：那里生成的 `font-family` 写的是**你本机的字体名**，只能参考，直接粘到线上页面，访客机器上多半没有那个字体。
 

@@ -53,7 +53,7 @@ hint: 每个字符占一样宽，代码与表格因此能对齐。和“数字�
     -   Courier New
     -   Nimbus Mono L
     -   GNU FreeMono
-    -   Liberation Mono，其大小一致，“[度量兼容](/docs/fonts-families-faces#字体指标)（metrically compatible）”
+    -   Liberation Mono，其大小一致，“[度量兼容](/)fonts-families-faces#字体指标)（metrically compatible）”
 -   DejaVu Sans Mono
     -   Menlo
     -   文泉驿等宽正黑

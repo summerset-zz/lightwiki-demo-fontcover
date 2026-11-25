@@ -76,7 +76,7 @@ font-kerning: none;
 
 **字偶距（kerning）**只调整某些**特定的字符对**。最典型的是 `AV`、`To`、`TA`、`yo`：它们的形状天然会形成一块过大的空白，字体设计师会为这些组合单独写一个负值。
 
-它在字体文件里存在 `GPOS` 表的 `kern` 特性里（见 [GSUB / GPOS](/docs/gsub-gpos)），也有极老的字体把它放在单独的 `kern` 表里。
+它在字体文件里存在 `GPOS` 表的 `kern` 特性里（见 [GSUB / GPOS](/)gsub-gpos)），也有极老的字体把它放在单独的 `kern` 表里。
 
 CSS 里对应 `font-kerning`：
 
@@ -108,7 +108,7 @@ body {
 
 <!-- source: en.wikipedia.org | Kerning | 1383272575 | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0/ | 摘译 Kerning values / Kerning tables / Contextual kerning 三节；只保留单位、两代存法与上下文调整 -->
 
-字偶距在字体里就是**一个数**：正数加大距离，负数收紧，而且绝大多数是负数。单位是字体自己的单位（一 em 分成 1000 或 2048 份，见 [字形与 em 方框](/docs/glyph-outline-and-em)），所以同一个数值在不同字体里代表的实际距离并不相同。
+字偶距在字体里就是**一个数**：正数加大距离，负数收紧，而且绝大多数是负数。单位是字体自己的单位（一 em 分成 1000 或 2048 份，见 [字形与 em 方框](/)glyph-outline-and-em)），所以同一个数值在不同字体里代表的实际距离并不相同。
 
 存的地方有两代：
 
@@ -171,4 +171,4 @@ kerning 是字体自带的，本站不提供开关；它默认开着（浏览器
 
 - MDN：`letter-spacing`、`font-kerning`
 - OpenType 规范：`GPOS` 的 `kern` 特性
-- 本站：[GSUB / GPOS](/docs/gsub-gpos)
+- 本站：[GSUB / GPOS](/)gsub-gpos)

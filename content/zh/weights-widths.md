@@ -64,7 +64,7 @@ CSS 里对应 `font-stretch`（现在更多用百分比写法 `font-stretch: 75%
 
 CSS 的 `font-weight` 数值（1–1000）会去找声明了同一数值的 face；找不到就按规则挑最近的，再不行就合成。
 
-也就是说：**同一份 CSS 在不同字体上得到的粗细可能不同**，因为最近的 face 不一样。详见 [font-weight](/docs/css-font-weight)。
+也就是说：**同一份 CSS 在不同字体上得到的粗细可能不同**，因为最近的 face 不一样。详见 [font-weight](/)css-font-weight)。
 
 ## 本站怎么显示 {#this-site}
 
@@ -83,4 +83,4 @@ CSS 的 `font-weight` 数值（1–1000）会去找声明了同一数值的 face
 
 - OpenType 规范：`OS/2` 的 `usWeightClass` 与 `usWidthClass`
 - MDN：`font-weight`、`font-stretch`
-- 本站：[font-weight 与 bold 的对应](/docs/css-font-weight)、[maxp 与变量轴](/docs/maxp-fvar-stat)
+- 本站：[font-weight 与 bold 的对应](/)css-font-weight)、[maxp 与变量轴](/)maxp-fvar-stat)

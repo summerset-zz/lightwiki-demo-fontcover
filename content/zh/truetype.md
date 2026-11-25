@@ -17,9 +17,9 @@ sourceChanges: 删除了全部图片、公式、引用角标、信息框、表�
 
 **TrueType**是由美国苹果公司和微软公司共同开发的一种电脑轮廓字体（曲线描边字）类型标准。这种类型字体文件的扩展名是`.ttf`，类型代码是`tfil`。
 
-早在1980年代末，苹果公司为了对抗[Adobe](/credits/maker/adobe-systems)公司的[Type 1](/docs/postscript-fonts#Type_1) PostScript字体，设计开发了TrueType。之后微软加入了开发，Windows操作系统的字体格式基本上都统一成TrueType，而在苹果的Mac OS却成了PostScript和TrueType对立的局面。TrueType后来也被Linux等系统使用，成为标准字体。TrueType的主要强项在于它能给开发者提供关于字体显示、不同字体大小的像素级显示等的高级控制。
+早在1980年代末，苹果公司为了对抗[Adobe](/credits/maker/adobe-systems)公司的[Type 1](/)postscript-fonts#Type_1) PostScript字体，设计开发了TrueType。之后微软加入了开发，Windows操作系统的字体格式基本上都统一成TrueType，而在苹果的Mac OS却成了PostScript和TrueType对立的局面。TrueType后来也被Linux等系统使用，成为标准字体。TrueType的主要强项在于它能给开发者提供关于字体显示、不同字体大小的像素级显示等的高级控制。
 
-在后来开发的[OpenType](/docs/opentype)类型字体中，可以选择PostScript或TrueType作为记述方式。
+在后来开发的[OpenType](/)opentype)类型字体中，可以选择PostScript或TrueType作为记述方式。
 
 ## 历史 {#历史}
 
@@ -27,7 +27,7 @@ sourceChanges: 删除了全部图片、公式、引用角标、信息框、表�
 
 在麦金塔中，字体原先是存储为手工调整的点阵字体文件，为每个字体、特殊大小分别指定一个个的像素位置。如果用户要看另一个大小的字体，字体管理器（Font Manager）找到最接近匹配，应用基本比例算法来显示。当比例放大到大字号的时候，效果就非常糟糕——因为字体是点阵式的，字形就被放大成马赛克式的锯齿。
 
-与之相对的，打印机的字体，如著名的Apple LaserWriter是基于[PostScript Type 1](/docs/postscript-fonts#Type_1)轮廓，可以出色地输出任何大小的文字。轮廓字体通过一套描绘曲线的算式来创建每个字符或“字形”。使用算式，计算机可以绘制出一个“轮廓”形状，然后再“填充”进颜色（例如：黑色）从而打印出字符。这些算式可以按照比例进行缩放到任意大小，而与显示器和打印机的分辨率无关。无论是打印到胶片，还是显示在屏幕上都具有同样的质量。该技术曾经是一个重要的发明，并由Adobe公司创始人开发推行，称为PostScript。但另一个难点是Type 1字体是加密过的，Adobe通过发售格式认证得到了相当可观的收入，所以他们也不想向苹果免费转让这个软件。
+与之相对的，打印机的字体，如著名的Apple LaserWriter是基于[PostScript Type 1](/)postscript-fonts#Type_1)轮廓，可以出色地输出任何大小的文字。轮廓字体通过一套描绘曲线的算式来创建每个字符或“字形”。使用算式，计算机可以绘制出一个“轮廓”形状，然后再“填充”进颜色（例如：黑色）从而打印出字符。这些算式可以按照比例进行缩放到任意大小，而与显示器和打印机的分辨率无关。无论是打印到胶片，还是显示在屏幕上都具有同样的质量。该技术曾经是一个重要的发明，并由Adobe公司创始人开发推行，称为PostScript。但另一个难点是Type 1字体是加密过的，Adobe通过发售格式认证得到了相当可观的收入，所以他们也不想向苹果免费转让这个软件。
 
 而苹果的Sampo Kaasila决定制作一个全新的格式，代号为“Bass”。这个系统随后被开发出来，称为TrueType，并在1991年5月随Mac OS System 7发表。这些字体均含有4种字型的套装，包括*Times Roman*, *Helvetica*, *Courier*等大量字体，代替了原麦金塔系统中原有的点阵字体。为了能保证和老系统的兼容，苹果还发布了一个TrueType扩展，和一个System Software 6使用的Font/DA Mover。
 
@@ -37,7 +37,7 @@ sourceChanges: 删除了全部图片、公式、引用角标、信息框、表�
 
 尽管ATM并不是随操作系统附，而需要另外购买，但是它已经成为桌面出版业界的实际标准。当TrueType发布的时候，Adobe的约翰·沃诺克发表声明，声称苹果和微软在兜售“骗人的万灵油”，并随后发布了可供任何人使用的Type 1格式作为出版标准。这给TrueType更大的压力。苹果于是更新了Adobe的协议，在其打印机上使用PostScript。
 
-苹果在1994年发表了TrueType GX拓展了TrueType，也是QuickDraw GX智能字体技术的一部分。这是在两个主要领域的重要拓展：首先在字体轴线（morphing变形），比如允许字体从细到粗、或从窄到宽平滑调整，与Adobe的“multiple master”技术对抗。第二就是自动替换，当字符组合为事先设计好的变体设计时可以进行自动替换，最常见的就是合字组合：“fi”“ffi”“ct”等等。但是，由于缺乏用户友好的开发工具来创建TrueType GX字体，使得GX fonts字体寥寥。TrueType GX中的多数技术，包括morphing变形和替换，现在都被囊括到Mac OS X系统的苹果高级文字排版技术（Apple Advanced Typography，AAT）中。然而苹果以外的字体开发者却很少创建AAT字体，而都转向支持[OpenType](/docs/opentype)。
+苹果在1994年发表了TrueType GX拓展了TrueType，也是QuickDraw GX智能字体技术的一部分。这是在两个主要领域的重要拓展：首先在字体轴线（morphing变形），比如允许字体从细到粗、或从窄到宽平滑调整，与Adobe的“multiple master”技术对抗。第二就是自动替换，当字符组合为事先设计好的变体设计时可以进行自动替换，最常见的就是合字组合：“fi”“ffi”“ct”等等。但是，由于缺乏用户友好的开发工具来创建TrueType GX字体，使得GX fonts字体寥寥。TrueType GX中的多数技术，包括morphing变形和替换，现在都被囊括到Mac OS X系统的苹果高级文字排版技术（Apple Advanced Typography，AAT）中。然而苹果以外的字体开发者却很少创建AAT字体，而都转向支持[OpenType](/)opentype)。
 
 ### 微软 {#微软}
 
@@ -47,7 +47,7 @@ sourceChanges: 删除了全部图片、公式、引用角标、信息框、表�
 
 微软和Monotype的技术人员使用TrueType的“提示技术”（hinting technology）来解决字体在低分辨率的显示模糊问题。原先的技术是在小字号时改用点阵字体。后来的技术改进首先引入了抗锯齿效果，可以平滑字体边缘；现在常用的是“次像素补偿”（微软使用这个技术，并称为ClearType），使用液晶显示器像素结构，以提高实际能显示的分辨率。微软大力推广这些技术，并扩展到各种平台。
 
-微软还开发了一个叫“智能字体”的技术，在1994年称为*TrueType Open*，然后在与Adobe Type 1技术合并后改名为[OpenType](/docs/opentype)。
+微软还开发了一个叫“智能字体”的技术，在1994年称为*TrueType Open*，然后在与Adobe Type 1技术合并后改名为[OpenType](/)opentype)。
 
 TrueType Collections (TTC)允许将多个字体合并为一个文件，为选择的字体仅使用一些字体的不同字形创建替换间距保存。最初只在中文、日文和韩国语版的Windows系统中使用，之后在Windows 2000支持所有区域。
 
@@ -55,7 +55,7 @@ TrueType Collections (TTC)允许将多个字体合并为一个文件，为选择
 
 ### Macintosh和Windows {#Macintosh和Windows}
 
-在目前的Mac OS X和Windows XP系统中，TrueType是最常见的字体格式。虽然二者都包含对Adobe的Type 1格式和[OpenType](/docs/opentype)拓展的本地支持。可是现在很多字体已经改用OpenType格式，但是大多数免费廉价的第三方字体仍使用纯TrueType格式。
+在目前的Mac OS X和Windows XP系统中，TrueType是最常见的字体格式。虽然二者都包含对Adobe的Type 1格式和[OpenType](/)opentype)拓展的本地支持。可是现在很多字体已经改用OpenType格式，但是大多数免费廉价的第三方字体仍使用纯TrueType格式。
 
 目前的趋势是，对屏幕补偿的追求减少了对拓展TrueType字体微调技术（font hinting）的重要性。苹果Mac OS X的补偿技术几乎忽略了所有TrueType字体中的所有微调资料，而微软的ClearType也忽略了很多微调资料，并与“略加微调”的字体配合使用最佳。
 

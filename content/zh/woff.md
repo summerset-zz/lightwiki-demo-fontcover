@@ -21,7 +21,7 @@ sourceChanges: 删除了全部图片、公式、引用角标、信息框、表�
 
 ## 规格 {#规格}
 
-WOFF本质上是包含了基于SFNT的字体（如[TrueType](/docs/truetype)、[OpenType](/docs/opentype)或其他开放字体格式），且这些字体均经过WOFF的编码工具压缩，以便嵌入网页中。WOFF 1.0使用zlib压缩，文件大小一般比TTF小40%。而WOFF 2.0使用Brotli压缩，文件大小比上一版小28%～29%。
+WOFF本质上是包含了基于SFNT的字体（如[TrueType](/)truetype)、[OpenType](/)opentype)或其他开放字体格式），且这些字体均经过WOFF的编码工具压缩，以便嵌入网页中。WOFF 1.0使用zlib压缩，文件大小一般比TTF小40%。而WOFF 2.0使用Brotli压缩，文件大小比上一版小28%～29%。
 
 W3C于2024年8月8日发布WOFF 2.0推荐标准的修订版；规范将`font/woff2`登记为此格式的媒体类型。
 

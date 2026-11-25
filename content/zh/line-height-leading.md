@@ -110,9 +110,9 @@ line-height: 2.2;
 
 CSS 里推荐用**无单位数字**（`line-height: 1.5`），它会随字号缩放；写成 `150%` 或 `24px` 则会在父元素处算成固定值，子元素放大字号后行距不跟着变。
 
-具体的坑见 [line-height 的四种值](/docs/css-line-height)。
+具体的坑见 [line-height 的四种值](/)css-line-height)。
 
 ## 延伸阅读
 
 - OpenType 规范：`hhea` 与 `OS/2` 的上下伸字段
-- 本站：[head、hhea 与 post](/docs/head-hhea-post)、[度量图怎么读](/docs/how-to-read-metrics)
+- 本站：[head、hhea 与 post](/)head-hhea-post)、[度量图怎么读](/)how-to-read-metrics)

@@ -18,7 +18,7 @@ emoji 最容易让人误判的地方只有一个：**它是字符，不是图片
 
 - 同一段文字，在 Apple、[Google](/credits/maker/google)、[Microsoft](/credits/maker/microsoft) 的系统上**长得不一样**，因为三家各自的 emoji 字体设计不同；
 - 截图与设计稿里的 emoji 换台机器就不可复现；
-- 字体可以完全不带 emoji 字形，那时浏览器会回退到系统的 emoji 字体（见 [整形与回退](/docs/unicode-shaping-fallback)）；
+- 字体可以完全不带 emoji 字形，那时浏览器会回退到系统的 emoji 字体（见 [整形与回退](/)unicode-shaping-fallback)）；
 - 彩色 emoji 是用位图或矢量表实现的（`CBDT`、`sbix`、`COLR` 等），但**对使用它的代码来说，它仍然只是一个字符**。
 
 ## 三种长度 {#counts}
@@ -97,7 +97,7 @@ Incorrect string value: '\xF0\x9F\x98\x80' for column 'name' at row 1
 
 - 前端用 `[...value].length` 或 `Intl.Segmenter` 计数，别直接用 `.length`；
 - 后端按字符（`CHAR_LENGTH`）校验；
-- 存之前统一 `normalize('NFC')`（见 [字符属性](/docs/unicode-character-properties)）；
+- 存之前统一 `normalize('NFC')`（见 [字符属性](/)unicode-character-properties)）；
 - **永远不要按字节截断字符串**，那会切出半个代理对，得到乱码。
 
 ## 渲染：它不是一张图片 {#render}
@@ -165,4 +165,4 @@ Incorrect string value: '\xF0\x9F\x98\x80' for column 'name' at row 1
 - Unicode 标准：emoji 相关章节与 `emoji-data.txt`
 - UTS #51（Unicode Emoji）
 - MDN：`Intl.Segmenter`、`String#codePointAt`
-- 本站：[码位与平面](/docs/unicode-codepoints)、[字符属性](/docs/unicode-character-properties)
+- 本站：[码位与平面](/)unicode-codepoints)、[字符属性](/)unicode-character-properties)

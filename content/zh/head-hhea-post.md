@@ -77,7 +77,7 @@ draft: false
 
 ## 三个符号方向别搞反 {#signs}
 
-这是[度量图](/docs/how-to-read-metrics)里最容易画错的地方：
+这是[度量图](/)how-to-read-metrics)里最容易画错的地方：
 
 | 值 | 实际方向 |
 | --- | --- |

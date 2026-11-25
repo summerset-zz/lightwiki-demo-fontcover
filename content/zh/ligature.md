@@ -27,7 +27,7 @@ hint: 两个以上字符合成一个字形，例如 fi 连成 ﬁ。OpenType 里
 
 当活字印刷诞生后，很多合字直接被制造成了铅字。但是在1950年代无衬线字体广泛使用，以及1970年代照相排版技术之后，合字就逐渐很少被使用。最早能进行合字电脑排版（之后激光打印机）之一的是高德纳的TeX程序（详见下文）。这一潮流也影响到了1985年之后的桌面排版技术。早期电脑软件无法进行合字替换（但TeX可以），大部分新制作的电脑字体里也没有合字。早期的个人电脑多使用英文，而英文中并不是必须使用合字，所以也没有实际需要。
 
-随着现代电脑处理的多语言化和现代电子排版技术（如[OpenType](/docs/opentype)）的流行，合字开始逐渐恢复被使用。
+随着现代电脑处理的多语言化和现代电子排版技术（如[OpenType](/)opentype)）的流行，合字开始逐渐恢复被使用。
 
 ## 拉丁文字 {#拉丁文字}
 
@@ -118,7 +118,7 @@ hint: 两个以上字符合成一个字形，例如 fi 连成 ﬁ。OpenType 里
 
 TeX是电脑排版系统中能使用合字的典型程序。它能提供五个常用合字：**ff**、**fi**、**fl**、**ffi**和**ffl**。当TeX遇到这些组合时会自动替换成合字。当然操作者可以手动切换。
 
-[OpenType](/docs/opentype)字体格式可以针对一个字符提供多个字形，因此用来作为合字替换，但需要软件支持。XeTeX就是一个可以运用这一优势的TeX排版引擎。这种替换原先主要用于阿拉伯文排版，但现在已经广泛用于西文OpenType字体。OpenType中，这些是标准`liga`、历史性`hlig`、上下文`clig`、需求性`rlig`和任意性`dlig`合字。这些在CSS3中可用`font-feature-settings`启用或禁用。
+[OpenType](/)opentype)字体格式可以针对一个字符提供多个字形，因此用来作为合字替换，但需要软件支持。XeTeX就是一个可以运用这一优势的TeX排版引擎。这种替换原先主要用于阿拉伯文排版，但现在已经广泛用于西文OpenType字体。OpenType中，这些是标准`liga`、历史性`hlig`、上下文`clig`、需求性`rlig`和任意性`dlig`合字。这些在CSS3中可用`font-feature-settings`启用或禁用。
 
 CSS还支持`font-variant-ligatures`特效。`common-ligatures`、`discretionary-ligatures`、`historical-ligatures`和`contextual`特效也被支持。
 

@@ -121,4 +121,4 @@ draft: false
 
 
 - OpenType 规范：`hhea`、`OS/2`、`post`
-- 本站：[head、hhea 与 post](/docs/head-hhea-post)
+- 本站：[head、hhea 与 post](/)head-hhea-post)

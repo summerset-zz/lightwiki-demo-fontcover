@@ -56,7 +56,7 @@ draft: false
 
 今天高分辨率屏幕普及，hinting 的重要性下降，很多新字体干脆不带指令。
 
-hinting 只是“轮廓变像素”那一整套里的一环：抗锯齿、次像素渲染（ClearType）都在同一个环节上，见 [文字光栅化](/docs/rasterization)。
+hinting 只是“轮廓变像素”那一整套里的一环：抗锯齿、次像素渲染（ClearType）都在同一个环节上，见 [文字光栅化](/)rasterization)。
 
 ## 为什么同字号看着不一样大 {#apparent-size}
 
@@ -66,7 +66,7 @@ hinting 只是“轮廓变像素”那一整套里的一环：抗锯齿、次像
 - 字重更大的字体显得更大（墨多）；
 - 汉字填满方框，混排时通常比同字号的西文显眼。
 
-所以把这个字体调成和那个一样大，在技术上做不到精确，只能靠视觉判断或 `font-size-adjust` 这类补偿（见 [合成与杂项](/docs/css-text-misc)）。
+所以把这个字体调成和那个一样大，在技术上做不到精确，只能靠视觉判断或 `font-size-adjust` 这类补偿（见 [合成与杂项](/)css-text-misc)）。
 
 ## 在本站哪里看 {#this-site}
 
@@ -77,4 +77,4 @@ hinting 只是“轮廓变像素”那一整套里的一环：抗锯齿、次像
 ## 延伸阅读
 
 - OpenType 规范：`glyf`（TrueType 轮廓与组件）、`CFF` / `CFF2`
-- 本站：[字体文件里有哪几张表](/docs/font-tables-overview)、[度量图怎么读](/docs/how-to-read-metrics)
+- 本站：[字体文件里有哪几张表](/)font-tables-overview)、[度量图怎么读](/)how-to-read-metrics)

@@ -146,4 +146,4 @@ draft: false
 
 - OpenType 规范：`GSUB`、`GPOS`、`GDEF`
 - OpenType 规范：feature tags 的完整列表
-- 本站：[cmap 表](/docs/cmap-table)
+- 本站：[cmap 表](/)cmap-table)
