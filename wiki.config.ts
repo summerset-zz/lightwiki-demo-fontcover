@@ -15,6 +15,10 @@
 const env =
   (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env ?? {};
 
+// 本站自己的 markdown 插件：把 `<!-- hint: -->` / `<!-- source: -->` 收成结构化数据。
+// 轻维基只提供 `state.env.data` 这个出口，怎么解析、怎么画都由本站决定。
+import directives from './directives.ts';
+
 const config = {
   title: '字体百科',
   siteUrl: 'https://summerset-zz.github.io/lightwiki-demo-fontcover',
@@ -23,6 +27,9 @@ const config = {
   content: 'content/zh',
   sections: ['basics', 'fields', 'unicode', 'scripts', 'design', 'dev', 'tools', 'reference', 'legal'],
   outputDir: 'dist',
+  markdown(md: unknown) {
+    directives(md as Parameters<typeof directives>[0]);
+  },
 };
 
 export default config;

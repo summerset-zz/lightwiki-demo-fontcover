@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="<%= it.page.lang %>">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= it.page.title %> · <%= it.site.title %></title>
+<% if (it.page.description) { %>
+<meta name="description" content="<%= it.page.description %>">
+<% } %>
+<% if (it.page.keywords.length > 0) { %>
+<meta name="keywords" content="<%= it.page.keywords.join(', ') %>">
+<% } %>
+<link rel="stylesheet" href="<%= it.site.base %>/assets/theme/style.css">
+<link rel="stylesheet" href="<%= it.site.base %>/assets/theme/theme-extra.css">
+<link rel="stylesheet" href="<%= it.site.base %>/assets/fontcover.css">
+</head>
+<body>
+<% if (it.partials.nav) { %><%~ include('nav', it) %><% } %>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="<%= it.index.url %>"><%= it.site.title %></a>
+<% if (it.site.search) { %>
+    <div class="search" data-lightwiki-search data-index="<%= it.site.search.url ?? '' %>">
+      <input type="search" class="search-input" placeholder="搜索…" aria-label="搜索" autocomplete="off">
+      <ul class="search-results" hidden></ul>
+    </div>
+<% } %>
+<% if (it.sidebar.kind === 'category') { %>
+    <p class="nav-section">分类 · <%= it.sidebar.title %></p>
+<% } %>
+    <nav>
+<% for (const group of it.sidebar.groups) { %>
+      <div class="nav-group">
+        <% if (group.section) { %><p class="nav-section"><%= group.label %></p><% } %>
+        <ul>
+<% for (const item of group.pages) { %>
+          <li><a href="<%= item.url %>"<% if (item.current) { %> class="current" aria-current="page"<% } %>><%= item.title %></a></li>
+<% } %>
+        </ul>
+      </div>
+<% } %>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <article>
+      <h1><%= it.page.title %></h1>
+<% if (it.page.updated) { %>
+      <p class="meta">最后更新 <%= it.page.updated %></p>
+<% } %>
+<% if (it.page.source.site) { %>
+      <aside class="source-block">
+        本文改编自
+        <% if (it.page.source.url) { %><a href="<%= it.page.source.url %>"><%= it.page.source.title || it.page.source.site %></a><% } else { %><%= it.page.source.title || it.page.source.site %><% } %>
+<% if (it.page.source.revid) { %>（修订 <code><%= it.page.source.revid %></code>）<% } %>
+<% if (it.page.source.license) { %>，依 <% if (it.page.source.licenseUrl) { %><a href="<%= it.page.source.licenseUrl %>"><%= it.page.source.license %></a><% } else { %><%= it.page.source.license %><% } %> 使用<% } %><% if (it.page.source.changes) { %>。改动：<%= String(it.page.source.changes).replace(/[。．.!?]\s*$/, '') %><% } %>。
+      </aside>
+<% } %>
+
+      <div class="prose">
+<%~ it.page.html %>
+      </div>
+
+<% const sources = it.page.meta?.sources ?? []; %>
+<% if (sources.length > 0) { %>
+      <section class="section-sources">
+        <h2>小节来源</h2>
+        <ul>
+<% for (const src of sources) { %>
+          <li>
+            <% if (src.anchor) { %><a href="#<%= src.anchor %>">#<%= src.anchor %></a> · <% } %>
+            <% if (src.licenseUrl) { %><a href="<%= src.licenseUrl %>"><%= src.license %></a><% } else { %><%= src.license %><% } %>
+            · 改编自 <a href="https://<%= src.site %>/w/index.php?oldid=<%= src.revid %>"><%= src.title %></a>
+            <% if (src.changes) { %>（<%= src.changes %>）<% } %>
+          </li>
+<% } %>
+        </ul>
+      </section>
+<% } %>
+
+<% if (it.page.markdown) { %>
+      <details class="source-view">
+        <summary>查看源码</summary>
+        <p class="meta">本页的 markdown 源文件（含 frontmatter）。</p>
+        <pre><code><%= it.page.markdown %></code></pre>
+      </details>
+<% } %>
+    </article>
+  </main>
+
+<% if (it.page.headings.length > 0) { %>
+  <nav class="toc">
+    <p class="nav-section">本页</p>
+    <ul>
+<% for (const heading of it.page.headings) { %>
+      <li class="lv<%= heading.level %>"><a href="#<%= heading.id %>"><%= heading.text %></a></li>
+<% } %>
+    </ul>
+  </nav>
+<% } %>
+</div>
+
+<% const hints = it.page.meta?.hints ?? []; %>
+<% if (hints.length > 0) { %>
+<script type="application/json" id="fontcover-hints"><%~ JSON.stringify(hints).replace(/</g, '\\u003c') %></script>
+<% } %>
+<% if (it.site.search) { %>
+<script src="<%= it.site.base %>/assets/theme/search.js" defer></script>
+<% } %>
+</body>
+</html>

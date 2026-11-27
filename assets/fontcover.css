@@ -1,0 +1,21 @@
+/* 站点自己的样式。只放轻维基主题没提供的：小节来源列表。 */
+
+.section-sources {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--fg-dim);
+}
+
+.section-sources h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  border: 0;
+  padding: 0;
+}
+
+.section-sources ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
